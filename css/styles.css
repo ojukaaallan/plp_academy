@@ -1,0 +1,118 @@
+/* CSS for the entire portfolio */
+body {
+background-color: #DEB887;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 960px;
+margin: 0 auto;
+padding: 20px;
+}
+header {
+background-color: #2C3E2F;
+color: #DEB887;
+text-align: center;
+padding: 80px 20px;
+}
+.profile-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+.profile-photo {
+border-radius: 50%;
+width: 200px;
+height: 200px;
+object-fit: cover;
+border: 5px solid #DEB887;
+margin-bottom: 20px;
+}
+.welcome-text {
+text-align: center;
+max-width: 700px;
+}
+.welcome-text h1 {
+font-size: 48px;
+font-weight: bold;
+margin: 0;
+}
+.welcome-text p {
+font-size: 20px;
+margin: 15px auto 0;
+}
+.cv-button {
+display: inline-block;
+background-color: #DEB887;
+color: #2C3E2F;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-top: 20px;
+font-weight: bold;
+}
+h2 {
+font-size: 28px;
+color: #2C3E2F;
+border-bottom: 2px solid #2C3E2F;
+padding-bottom: 10px;
+margin-top: 40px;
+}
+.content-box {
+background-color: #F5F5DC;
+border: 1px solid #2C3E2F;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 5px;
+}
+dl {
+margin: 0;
+}
+dt h3 {
+margin: 0;
+font-size: 20px;
+color: #2C3E2F;
+}
+dd {
+margin-left: 20px;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+ul li {
+background-color: #F5F5DC;
+border: 1px solid #45159c;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+}
+footer {
+background-color: #2C3E2F;
+color: #df7f11;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+footer a {
+color: #31d39d;
+text-decoration: none;
+}
+/* Media query for smaller screens to stack photo and text */
+@media (min-width: 768px) {
+.profile-section {
+flex-direction: row;
+text-align: left;
+}
+.profile-photo {
+margin-right: 40px;
+margin-bottom: 0;
+}
+.welcome-text {
+text-align: left;
+}
+}
